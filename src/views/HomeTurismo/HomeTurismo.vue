@@ -1,15 +1,15 @@
 <template>
     <div class="containerHome">
         <header>
-            <div class="logo">
-                <img src="../../assets/shared/logo.svg" alt="logo">
-            </div>
+
+            <img src="../../assets/shared/logo.svg" alt="logo">
+
             <nav>
                 <ul>
-                    <li>00 Home</li>
-                    <li>01 Destination</li>
-                    <li>02 Crew</li>
-                    <li>03 Technology</li>
+                    <li>00 <strong> Home</strong></li>
+                    <li>01 <strong>Destination</strong></li>
+                    <li>02 <strong>Crew</strong></li>
+                    <li>03 <strong>Technology</strong></li>
                 </ul>
             </nav>
         </header>
