@@ -1,10 +1,8 @@
 <template>
     <div class="containerHome">
         <header>
-
             <img src="../../assets/shared/logo.svg" alt="logo">
-
-            <NavMenu/>
+            <NavMenu />
         </header>
 
         <main>
@@ -28,7 +26,7 @@ import NavMenu from '@/assets/shared/NavMenu/NavMenu.vue';
 
 export default {
     name: 'HomeTurismo',
-    components:{
+    components: {
         NavMenu,
     }
 }
