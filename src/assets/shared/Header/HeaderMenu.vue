@@ -8,8 +8,6 @@
 <script>
 import NavMenu from '../NavMenu/NavMenu.vue';
 
-
-
 export default {
     name: 'HeaderMenu',
     components: {
@@ -17,3 +15,7 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './_HeaderMenu';
+</style>

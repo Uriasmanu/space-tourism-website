@@ -1,4 +1,5 @@
 // src/router/index.js
+
 import DestinationPage from '@/views/DestinationPage/DestinationPage.vue';
 import HomeTurismo from '@/views/HomeTurismo/HomeTurismo.vue';
 import { createRouter, createWebHistory } from 'vue-router';
@@ -10,7 +11,7 @@ const routes = [
     name: 'Home',
     component: HomeTurismo
   },
-  
+
   {
     path: '/destination',
     name: 'Destination',

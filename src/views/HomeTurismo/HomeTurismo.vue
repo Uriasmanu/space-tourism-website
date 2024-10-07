@@ -1,6 +1,8 @@
 <template>
     <div class="containerHome">
-        <HeaderMenu />
+        <header>
+            <HeaderMenu />
+        </header>
         <main>
             <div class="titulo">
 
@@ -10,7 +12,7 @@
                     outer space and not hover kind of on the edge of it. Well sit back, and relax
                     because we’ll give you a truly out of this world experience!</p>
             </div>
-            <button>Explore</button>
+            <button @click="navigateTo('Destination')">Explore</button>
         </main>
 
     </div>
@@ -18,14 +20,26 @@
 
 <script>
 import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
+import { useRouter } from 'vue-router';
 
 
 export default {
     name: 'HomeTurismo',
     components: {
         HeaderMenu,
+    },
+
+    setup() {
+        const router = useRouter();
+
+        const navigateTo = (routeName) => {
+            router.push({ name: routeName });
+        }
+
+        return { navigateTo };
     }
 }
+
 </script>
 
 <style lang="scss" scoped>

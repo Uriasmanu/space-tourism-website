@@ -1,8 +1,8 @@
 nav {
-    height: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
-    padding: 0 5% 0 8%;
+    padding: 0 35px 0 58px;
     background: #ffffff0d; // cor branca com 5% de transparência
     backdrop-filter: blur(20px); // efeito de blur
     -webkit-backdrop-filter: blur(10px); // compatibilidade com Safari
@@ -21,6 +21,7 @@ nav {
         gap: 10px;
         font-weight: bold;
         color: #fff;
+        cursor: pointer;
   
         strong {
           font-weight: 100;

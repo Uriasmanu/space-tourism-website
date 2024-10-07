@@ -10,19 +10,9 @@
   flex-direction: column;
   justify-content: space-between;
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-    align-items: center;
-    height: 9rem;
-
-    img {
-      width: 35px;
-      height: 35px;
-    }
-
-  
+  header{
+    position: relative;
+    top: 30px;
   }
 
   main {

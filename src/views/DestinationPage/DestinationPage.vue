@@ -1,6 +1,9 @@
 <template>
     <div class="destination-container">
-        <HeaderMenu />
+        <header>
+            <HeaderMenu />
+        </header>
+
     </div>
 </template>
 
