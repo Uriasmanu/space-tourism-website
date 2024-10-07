@@ -22,43 +22,7 @@
       height: 35px;
     }
 
-    nav {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 5% 0 8%;
-      background: #ffffff0d; // cor branca com 5% de transparência
-      backdrop-filter: blur(20px);
-      /* aplica o efeito de blur */
-      -webkit-backdrop-filter: blur(10px);
-      /* para compatibilidade com Safari */
-
-      ul {
-        display: flex;
-        gap: 80px;
-        height: 100%;
-        box-sizing: border-box;
-
-        li {
-          height: 100%;
-          display: flex;
-          align-items: center;
-          border-bottom: solid 3px transparent;
-          gap: 10px;
-          font-weight: bold;
-
-          strong {
-            font-weight: 100;
-            color: #ffffffad;
-          }
-
-          &:hover {
-            border-bottom: solid 3px white;
-            cursor: pointer;
-          }
-        }
-      }
-    }
+  
   }
 
   main {

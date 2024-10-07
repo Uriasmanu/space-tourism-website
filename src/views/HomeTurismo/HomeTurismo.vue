@@ -4,14 +4,7 @@
 
             <img src="../../assets/shared/logo.svg" alt="logo">
 
-            <nav>
-                <ul>
-                    <li>00 <strong> Home</strong></li>
-                    <li>01 <strong>Destination</strong></li>
-                    <li>02 <strong>Crew</strong></li>
-                    <li>03 <strong>Technology</strong></li>
-                </ul>
-            </nav>
+            <NavMenu/>
         </header>
 
         <main>
@@ -30,9 +23,14 @@
 </template>
 
 <script>
+import NavMenu from '@/assets/shared/NavMenu/NavMenu.vue';
+
 
 export default {
     name: 'HomeTurismo',
+    components:{
+        NavMenu,
+    }
 }
 </script>
 
