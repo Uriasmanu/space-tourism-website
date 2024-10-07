@@ -1,4 +1,5 @@
 // src/router/index.js
+import DestinationPage from '@/views/DestinationPage/DestinationPage.vue';
 import HomeTurismo from '@/views/HomeTurismo/HomeTurismo.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
@@ -9,7 +10,12 @@ const routes = [
     name: 'Home',
     component: HomeTurismo
   },
-  // Adicione mais rotas conforme necessário
+  
+  {
+    path: '/destination',
+    name: 'Destination',
+    component: DestinationPage
+  },
 ];
 
 const router = createRouter({

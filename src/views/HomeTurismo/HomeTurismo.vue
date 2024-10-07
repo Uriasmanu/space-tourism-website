@@ -1,10 +1,6 @@
 <template>
     <div class="containerHome">
-        <header>
-            <img src="../../assets/shared/logo.svg" alt="logo">
-            <NavMenu />
-        </header>
-
+        <HeaderMenu />
         <main>
             <div class="titulo">
 
@@ -21,13 +17,13 @@
 </template>
 
 <script>
-import NavMenu from '@/assets/shared/NavMenu/NavMenu.vue';
+import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
 
 
 export default {
     name: 'HomeTurismo',
     components: {
-        NavMenu,
+        HeaderMenu,
     }
 }
 </script>
