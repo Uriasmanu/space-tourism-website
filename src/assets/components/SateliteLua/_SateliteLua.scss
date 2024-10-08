@@ -1,0 +1,45 @@
+@import '../../../../main.scss';
+
+.luas {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 450px;
+
+    h3 {
+        font-size: 5.5rem;
+        color: #fff;
+        font-family: "Bellefair", serif;
+        font-weight: 100;
+
+    }
+
+    p {
+        color: #d0d6f9;
+        width: 100%;
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }
+
+    .linha {
+        border-bottom: 1px solid #979797;
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+
+    .infos-distancia {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+
+        .inform {
+            p:nth-child(2) {
+                color: #fff;
+                font-family: "Bellefair", serif;
+                font-size: 1.9rem;
+                font-weight: 100;
+                
+            }
+        }
+    }
+}
