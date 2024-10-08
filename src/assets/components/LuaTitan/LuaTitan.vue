@@ -26,4 +26,5 @@
 
 <style lang="scss" scoped>
 @import '../SateliteLua/_SateliteLua';
+@import '../SateliteLua/_SateliteLuaMobile';
 </style>

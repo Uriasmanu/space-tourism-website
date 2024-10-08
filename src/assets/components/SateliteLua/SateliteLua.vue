@@ -31,4 +31,5 @@
 
 <style lang="scss" scoped>
 @import'./_SateliteLua.scss';
+@import'./_SateliteLuaMobile.scss';
 </style>
