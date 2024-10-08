@@ -32,5 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './_NavMenu'
+@import './_NavMenu.scss';
+@import'_NavMenuMobile.scss';
 </style>

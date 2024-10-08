@@ -45,4 +45,5 @@ export default {
 
 <style lang="scss" scoped>
 @import './_HomeTurismo.scss';
+@import './_HomeTurismoMobile.scss';
 </style>

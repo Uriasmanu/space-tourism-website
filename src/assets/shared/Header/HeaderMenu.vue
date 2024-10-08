@@ -17,5 +17,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './_HeaderMenu';
+@import './_HeaderMenu.scss';
+@import './_HeaderMenuMobile.scss';
 </style>

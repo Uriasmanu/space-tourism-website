@@ -103,4 +103,5 @@ export default {
 
 <style lang="scss" scoped>
 @import './_DestinationPage.scss';
+@import './_DestinationPageMobile.scss';
 </style>
