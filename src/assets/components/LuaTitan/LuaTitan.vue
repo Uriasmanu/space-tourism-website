@@ -7,7 +7,7 @@
         <div class="infos-distancia">
             <div class="inform distancia">
                 <p>Distância média</p>
-                <p>1,6 bilhões km</p>
+                <p>1,6 bi km</p>
             </div>
 
             <div class="inform dias">
