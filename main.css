@@ -11,4 +11,9 @@
 :root {
   --primary-font: "Bellefair", serif;
   --secundary-font: "Barlow Condensed", sans-serif;
+}
+
+header {
+  position: relative;
+  top: 30px;
 }/*# sourceMappingURL=main.css.map */
