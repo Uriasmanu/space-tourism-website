@@ -4,7 +4,7 @@
             <HeaderMenu />
         </header>
         <main>
-            <div class="escolha-imagens">
+            <div class="titulo">
                 <h2>01 <strong>ESCOLHA SEU DESTINO</strong></h2>
                 <img :src="img" :alt="nomeImagem">
             </div>

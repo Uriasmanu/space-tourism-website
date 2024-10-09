@@ -1,8 +1,14 @@
 <template>
     <div class="crew-container">
         <header>
-            <HeaderMenu/>
+            <HeaderMenu />
         </header>
+        <main>
+            <div class="titulo">
+                <h2>02 <strong>MEET YOUR CREW</strong></h2>
+
+            </div>
+        </main>
     </div>
 </template>
 
@@ -11,7 +17,7 @@ import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
 
 export default {
     name: 'Crew',
-    components:{
+    components: {
         HeaderMenu,
     }
 }
