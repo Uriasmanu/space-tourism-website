@@ -11,7 +11,9 @@ import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
 
 export default {
     name: 'Crew',
-
+    components:{
+        HeaderMenu,
+    }
 }
 </script>
 
