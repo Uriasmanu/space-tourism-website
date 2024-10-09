@@ -5,7 +5,7 @@
             <li :class="{ active: route.name === 'Destination' }" @click="navigateTo('Destination')">01
                 <strong>Destino</strong>
             </li>
-            <li>02 <strong>Tripulação</strong></li>
+            <li :class="{ active: route.name === 'Crew' }" @click="navigateTo('Crew')">02 <strong>Tripulação</strong></li>
             <li>03 <strong>Tecnologia</strong></li>
         </ul>
     </nav>
