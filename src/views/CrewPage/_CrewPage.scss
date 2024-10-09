@@ -1,10 +1,75 @@
-@import '../../../main.scss';
+@import "../../../main.scss";
 
 .crew-container {
-    width: 100%;
-    height: 100vh;
-    padding: 0rem 0 8rem 3.5rem;
-    background-image: url("../../assets/destination/background-destination-desktop.jpg");
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 0rem 0 8rem 3.5rem;
+  background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  display: flex;
+  flex-direction: column;
+
+  .tripula {
+    margin-top: 9%;
+
+    img {
+      width: 23%;
+      height: auto;
+    }
+
+    .titulo {
+      height: 400px;
+      width: 45%;
+
+      .chamada {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .descricao {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h3 {
+            font-size: 2rem;
+            font-family: "Bellefair", serif;
+            color: #6d6f7e;
+          }
+
+          h2 {
+            font-size: 3.5rem;
+            font-family: "Bellefair", serif;
+            color: #fff;
+          }
+
+          P {
+            font-size: 1.2rem;
+            font-family: "Bellefair", serif;
+            color: #d0d6f9;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .guia {
+        display: flex;
+        gap: 2rem;
+
+        input {
+          cursor: pointer;
+          appearance: none; /* Remove o estilo padrão do radio button */
+          width: 10px;
+          height: 10px;
+          border-radius: 50%; /* Deixa o input com formato circular */
+          background-color: grey; /* Cor padrão dos inputs não selecionados */
+          border: 2px solid transparent;
+
+          &:checked {
+            background-color: #fff; /* Cor do input selecionado */
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
