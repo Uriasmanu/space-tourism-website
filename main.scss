@@ -17,6 +17,10 @@
 header {
   position: relative;
   top: 30px;
+
+  .menu {
+    display: none;
+  }
 }
 
 main {
@@ -24,7 +28,6 @@ main {
   height: 100%;
   margin-top: 6%;
   justify-content: space-evenly;
-  
 
   .titulo {
     display: flex;
@@ -52,5 +55,13 @@ main {
     position: relative;
     top: 0px;
     height: auto;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    .menu {
+      display: block;
+    }
   }
 }

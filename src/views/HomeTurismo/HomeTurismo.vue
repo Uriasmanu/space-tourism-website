@@ -3,7 +3,7 @@
         <header>
             <HeaderMenu />
             <div class="menu">
-                <MenuMobile/>
+                <MenuMobile />
             </div>
         </header>
         <main>

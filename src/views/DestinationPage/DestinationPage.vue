@@ -2,6 +2,9 @@
     <div class="destination-container">
         <header>
             <HeaderMenu />
+            <div class="menu">
+                <MenuMobile />
+            </div>
         </header>
         <main>
             <div class="titulo">
@@ -10,18 +13,11 @@
             </div>
             <div class="informacoes-luas">
                 <ul>
-                    <li 
-                        @click="selectDestination('moon', 'LUA')"
-                        :class="{ active: img === moonImg }">LUAR</li>
-                    <li 
-                        @click="selectDestination('mars', 'MARTE')"
-                        :class="{ active: img === marsImg }">MARTE</li>
-                    <li 
-                        @click="selectDestination('europa', 'EUROPA')"
-                        :class="{ active: img === europaImg }">EUROPA</li>
-                    <li 
-                        @click="selectDestination('titan', 'TITAN')"
-                        :class="{ active: img === titanImg }">TITAN</li>
+                    <li @click="selectDestination('moon', 'LUA')" :class="{ active: img === moonImg }">LUAR</li>
+                    <li @click="selectDestination('mars', 'MARTE')" :class="{ active: img === marsImg }">MARTE</li>
+                    <li @click="selectDestination('europa', 'EUROPA')" :class="{ active: img === europaImg }">EUROPA
+                    </li>
+                    <li @click="selectDestination('titan', 'TITAN')" :class="{ active: img === titanImg }">TITAN</li>
                 </ul>
 
                 <!-- Componente a ser mostrado baseado na escolha -->
@@ -37,6 +33,8 @@ import LuaTitan from '@/assets/components/LuaTitan/LuaTitan.vue';
 import PlanetMarte from '@/assets/components/PlanetMarte/PlanetMarte.vue';
 import SateliteLua from '@/assets/components/SateliteLua/SateliteLua.vue';
 import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
+import MenuMobile from '@/assets/shared/MenuMobile/MenuMobile.vue';
+
 
 // Importe as imagens diretamente
 import moonImg from '@/image/destination/image-moon.png';
@@ -52,6 +50,7 @@ export default {
         LuaEuropa,
         LuaTitan,
         PlanetMarte,
+        MenuMobile,
     },
     data() {
         return {
@@ -66,7 +65,7 @@ export default {
             titanImg,
         };
     },
-   
+
     methods: {
         selectDestination(imageName, nomeImagem) {
             console.log('Função selectDestination chamada com:', imageName, nomeImagem);
@@ -103,5 +102,5 @@ export default {
 
 <style lang="scss" scoped>
 @import './_DestinationPage.scss';
-@import './_DestinationPageMobile.scss';
+@import './DestinationPageMobile.scss';
 </style>

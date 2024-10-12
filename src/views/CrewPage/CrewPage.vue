@@ -2,6 +2,9 @@
     <div class="crew-container">
         <header>
             <HeaderMenu />
+            <div class="menu">
+                
+            </div>
         </header>
         <main class="tripula">
             <div class="titulo">
@@ -36,6 +39,7 @@
 import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
 import crewData from './tripulacao.json';
 
+
 import douglas from '../../assets/crew/image-douglas-hurley.png';
 import mark from '../../assets/crew/image-mark-shuttleworth.png';
 import victor from '../../assets/crew/image-victor-glover.png';
@@ -50,6 +54,7 @@ export default {
         return {
             crew: crewData,
             selectedCrewIndex: 0, // Começa exibindo o primeiro tripulante
+            
 
             // Imagens
             douglas,
@@ -75,4 +80,5 @@ export default {
 
 <style lang="scss" scoped>
 @import './_CrewPage';
+@import './_CrewPageMobile';
 </style>
