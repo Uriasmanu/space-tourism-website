@@ -5,7 +5,7 @@
         </header>
         <main class="tripula">
             <div class="titulo">
-                <h2>02 <strong>MEET YOUR CREW</strong></h2>
+                <h2>02 <strong>CONHEÇA SUA TRIPULAÇÃO</strong></h2>
 
                 <div class="chamada">
                     <div class="descricao">
