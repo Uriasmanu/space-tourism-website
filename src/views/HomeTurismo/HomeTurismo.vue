@@ -2,6 +2,9 @@
     <div class="containerHome">
         <header>
             <HeaderMenu />
+            <div class="menu">
+                <MenuMobile/>
+            </div>
         </header>
         <main>
             <div class="titulo">
@@ -21,6 +24,7 @@
 
 <script>
 import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
+import MenuMobile from '@/assets/shared/MenuMobile/MenuMobile.vue';
 import { useRouter } from 'vue-router';
 
 
@@ -28,6 +32,7 @@ export default {
     name: 'HomeTurismo',
     components: {
         HeaderMenu,
+        MenuMobile,
     },
 
     setup() {

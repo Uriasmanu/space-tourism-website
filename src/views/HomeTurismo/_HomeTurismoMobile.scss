@@ -11,6 +11,17 @@
     flex-direction: column;
     justify-content: space-around;
 
+    header {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .menu {
+        display: block;
+
+      }
+    }
+
     main {
       display: flex;
       justify-content: space-evenly;
@@ -20,6 +31,7 @@
       width: 100%;
       text-align: center;
       gap: 6rem;
+      height: 80%;
 
       .titulo {
         width: 100%;
@@ -42,16 +54,15 @@
           width: 100%;
           margin-top: 4%;
           line-height: 2;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
 
       button {
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
         border-radius: 15rem;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-family: "Bellefair", serif;
         font-style: normal;
         transition: box-shadow 0.3s ease-out;
