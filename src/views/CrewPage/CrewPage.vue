@@ -3,7 +3,7 @@
         <header>
             <HeaderMenu />
             <div class="menu">
-                
+                <MenuMobile/>
             </div>
         </header>
         <main class="tripula">
@@ -38,7 +38,7 @@
 <script>
 import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
 import crewData from './tripulacao.json';
-
+import MenuMobile from '@/assets/shared/MenuMobile/MenuMobile.vue';
 
 import douglas from '../../assets/crew/image-douglas-hurley.png';
 import mark from '../../assets/crew/image-mark-shuttleworth.png';
@@ -49,6 +49,7 @@ export default {
     name: 'Crew',
     components: {
         HeaderMenu,
+        MenuMobile,
     },
     data() {
         return {
