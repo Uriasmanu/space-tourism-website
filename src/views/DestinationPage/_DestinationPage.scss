@@ -1,47 +1,46 @@
 @import "../../../main.scss";
 
 .destination-container {
-    width: 100%;
-    height: 100vh;
-    padding: 0rem 0 8rem 3.5rem;
-    background-image: url("../../assets/destination/background-destination-desktop.jpg");
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 0rem 0 8rem 3.5rem;
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  display: flex;
+  flex-direction: column;
 
-
-    main {
-
-        .titulo {
-            
-            img {
-                width: 23rem;
-                height: auto;
-            }
-        }
-
-        .informacoes-luas {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            gap: 20px;
-
-            ul {
-                display: flex;
-                gap: 15px;
-                cursor: pointer;
-
-                li {
-                    color: #d0d6f9;
-                    border-bottom: transparent 1px solid;
-                    height: 25px;
-                    font-size: 0.8rem;
-
-                    &.active {
-                        color: #fff;
-                        border-bottom: #fff 2px solid;
-                    }
-                }
-            }
-        }
+  main {
+    .titulo {
+      justify-content: space-between;
+      
+      img {
+        width: 23rem;
+        height: auto;
+      }
     }
+
+    .informacoes-luas {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 20px;
+
+      ul {
+        display: flex;
+        gap: 15px;
+        cursor: pointer;
+
+        li {
+          color: #d0d6f9;
+          border-bottom: transparent 1px solid;
+          height: 25px;
+          font-size: 0.8rem;
+
+          &.active {
+            color: #fff;
+            border-bottom: #fff 2px solid;
+          }
+        }
+      }
+    }
+  }
 }
