@@ -1,7 +1,7 @@
 @import "../../../main.scss";
 
 @media (max-width: 600px) {
-
+  
   .crew-container {
     width: 100%;
     height: 100vh;
@@ -10,85 +10,83 @@
     display: flex;
     flex-direction: column;
 
-    main{
+    main {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      
-    }
 
-    .tripula {
-      margin-top: 5%;
-      
+      .tripula {
+        margin-top: 5%;
 
-      img {
-        width: auto;
-        height: 225px;
-        margin-top: 12%;
-      }
-
-      .titulo {
-        height: 50%;
-        width: 100%;
-        gap: 25px;
-
-        .chamada {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: auto;
-          
-
-          .descricao {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            align-items: center;
-
-            h3 {
-              font-size: 1.2rem;
-              font-family: "Bellefair", serif;
-              color: #6d6f7e;
-            }
-
-            h2 {
-              font-size: 2rem ;
-              font-family: "Bellefair", serif;
-              color: #fff;
-            }
-
-            P {
-              font-size: 1rem;
-              font-family: "Bellefair", serif;
-              color: #d0d6f9;
-              line-height: 1.5;
-              text-align: center;
-            }
-          }
+        img {
+          width: auto;
+          height: 225px;
+          margin-top: 12%;
         }
 
-        .guia {
-          display: flex;
-          gap: 2rem;
+        .titulo {
+          height: 50%;
+          width: 100%;
+          gap: 25px;
           justify-content: center;
-         
-          label{
-            display: none;
+
+          .chamada {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+
+            .descricao {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              align-items: center;
+
+              h3 {
+                font-size: 1.2rem;
+                font-family: "Bellefair", serif;
+                color: #6d6f7e;
+              }
+
+              h2 {
+                font-size: 2rem;
+                font-family: "Bellefair", serif;
+                color: #fff;
+              }
+
+              P {
+                font-size: 1rem;
+                font-family: "Bellefair", serif;
+                color: #d0d6f9;
+                line-height: 1.5;
+                text-align: center;
+              }
+            }
           }
 
-          input {
-            cursor: pointer;
-            appearance: none; /* Remove o estilo padrão do radio button */
-            width: 10px;
-            height: 10px;
-            border-radius: 50%; /* Deixa o input com formato circular */
-            background-color: grey; /* Cor padrão dos inputs não selecionados */
-            border: 2px solid transparent;
+          .guia {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
 
-            &:checked {
-              background-color: #fff; /* Cor do input selecionado */
-              border-color: #fff;
+            label {
+              display: none;
+            }
+
+            input {
+              cursor: pointer;
+              appearance: none; /* Remove o estilo padrão do radio button */
+              width: 10px;
+              height: 10px;
+              border-radius: 50%; /* Deixa o input com formato circular */
+              background-color: grey; /* Cor padrão dos inputs não selecionados */
+              border: 2px solid transparent;
+
+              &:checked {
+                background-color: #fff; /* Cor do input selecionado */
+                border-color: #fff;
+              }
             }
           }
         }

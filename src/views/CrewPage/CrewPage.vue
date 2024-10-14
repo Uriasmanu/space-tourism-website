@@ -80,6 +80,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './_CrewPage';
-@import './_CrewPageMobile';
+@import './_CrewPage.scss';
+@import './_CrewPageMobile.scss';
 </style>
