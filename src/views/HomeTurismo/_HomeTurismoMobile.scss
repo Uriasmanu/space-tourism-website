@@ -12,8 +12,15 @@
 
 
     header {
- 
-
+      position: relative;
+      top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      .menu {
+        display: block;
+      }
     }
 
     main {
@@ -54,7 +61,8 @@
       }
 
       button {
-        width: 7rem;
+        width: 130px;
+        height: 130px;
         border-radius: 15rem;
         border: none;
         font-size: 1.4rem;
