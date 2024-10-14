@@ -29,7 +29,7 @@ import { useRouter } from 'vue-router';
 
 
 export default {
-    name: 'HomeTurismo',
+    name: 'HomeView',
     components: {
         HeaderMenu,
         MenuMobile,
@@ -49,6 +49,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './_HomeTurismo.scss';
-@import './_HomeTurismoMobile.scss';
+@import './_HomeView.scss';
+@import './_HomeViewMobile.scss';
 </style>

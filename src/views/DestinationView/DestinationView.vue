@@ -43,7 +43,7 @@ import europaImg from '@/image/destination/image-europa.png';
 import titanImg from '@/image/destination/image-titan.png';
 
 export default {
-    name: 'Destination',
+    name: 'DestinationView',
     components: {
         HeaderMenu,
         SateliteLua,
@@ -101,6 +101,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './_DestinationPage.scss';
-@import './DestinationPageMobile.scss';
+@import './_DestinationView.scss';
+@import './DestinationViewMobile.scss';
 </style>

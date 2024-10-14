@@ -46,7 +46,7 @@ import victor from '../../assets/crew/image-victor-glover.png';
 import anousheh from '../../assets/crew/image-anousheh-ansari.png';
 
 export default {
-    name: 'Crew',
+    name: 'CrewView',
     components: {
         HeaderMenu,
         MenuMobile,
@@ -80,6 +80,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './_CrewPage.scss';
-@import './_CrewPageMobile.scss';
+@import './_CrewView.scss';
+@import './_CrewViewMobile.scss';
 </style>
