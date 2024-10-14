@@ -10,7 +10,7 @@
     text-align: center;
 
     h3 {
-      font-size: 4.5rem;
+      font-size: 3rem;
       color: #fff;
       font-family: "Bellefair", serif;
       font-weight: 100;
@@ -35,13 +35,13 @@
       width: 90%;
       justify-content: space-between;
       flex-direction: column;
-      gap: 10px;
+      gap: 6px;
 
       .inform {
         p:nth-child(2) {
           color: #fff;
           font-family: "Bellefair", serif;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           font-weight: 100;
         }
       }
