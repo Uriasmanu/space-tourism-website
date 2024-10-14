@@ -1,68 +1,121 @@
+@import "../../../main.scss";
+
 .containe-tecnologia {
-  background-image: url("../../assets/technology/background-technology-desktop.jpg");
-  width: 100%;
-  height: 100vh;
-  color: aliceblue;
-  padding: 0rem 0 8rem 3.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  header {
-    position: relative;
-    top: 30px;
-
-    .menu {
-      display: none;
-    }
-  }
-
-  main {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    padding: 0rem 0 8rem 3.5rem;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    .titulo {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
+    header {
+        position: relative;
+        top: 30px;
 
-      h2 {
-        font-size: 1.3rem;
-        color: #898888;
-        font-weight: bold;
-        font-family: "Bellefair", serif;
-
-        strong {
-          color: #fff;
-          font-weight: 100;
-          font-family: "Bellefair", serif;
+        .menu {
+            display: none;
         }
-      }
+    }
 
-      .informacoes{
-        .botao-informacoes{
-            border: 1px solid #fff;
-            height: 80px;
-            width: 80px;
+    main {
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        margin-top: 8%;
+        justify-content: space-evenly;
+
+
+        .titulo {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 60px;
-            
-            label{
-                cursor: pointer;
-                font-size: 2rem;
-                color: #fff;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+
+            h2 {
+                font-size: 1.3rem;
+                color: #898888;
+                font-weight: bold;
                 font-family: "Bellefair", serif;
-                font-weight: 100;
+
+                strong {
+                    color: #fff;
+                    font-weight: 100;
+                    font-family: "Bellefair", serif;
+                }
             }
-    
-            input{
-                display: none;
-                
+
+            .informacoes {
+                display: flex;
+                height: 80%;
+
+                .textos {
+                    display: flex;
+                    gap: 3rem;
+                    height: 80%;
+
+                    .checkbox{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        height: auto;
+                        justify-content: space-between;
+                    }
+
+                    .botao-informacoes {
+                        border: 1px solid #fff;
+                        height: 60px;
+                        width: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50px;
+
+                        label {
+                            cursor: pointer;
+                            font-size: 1.5rem;
+                            color: #fff;
+                            font-family: "Bellefair", serif;
+                            font-weight: 100;
+                        }
+
+                        input {
+                            display: none;
+                        }
+                    }
+
+                    .contain-infos {
+                        font-family: "Bellefair", serif;
+                        display: flex;
+                        flex-direction: column;
+                        width: 500px;
+                        line-height: 2;
+
+                        h4 {
+                            color: #898888;
+                            font-size: 1.2rem;
+                        }
+
+                        h3 {
+                            color: #fff;
+                            font-size: 2.5rem;
+                        }
+
+                        p {
+                            color: #d0d6f9;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+
             }
+
+            
         }
+      .imageMobile{
+        display: none;
       }
     }
-  }
 }
