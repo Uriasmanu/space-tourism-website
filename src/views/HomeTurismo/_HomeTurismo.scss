@@ -10,6 +10,15 @@
   flex-direction: column;
   justify-content: space-between;
 
+  header {
+    position: relative;
+    top: 30px;
+  
+    .menu {
+      display: none;
+    }
+  }
+
 
   main {
     display: flex;

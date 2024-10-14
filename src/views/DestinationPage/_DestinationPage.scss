@@ -8,6 +8,15 @@
   display: flex;
   flex-direction: column;
 
+  header {
+    position: relative;
+    top: 30px;
+  
+    .menu {
+      display: none;
+    }
+  }
+
   main {
     display: flex;
     height: 100%;

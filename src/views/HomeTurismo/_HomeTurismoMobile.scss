@@ -9,12 +9,10 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+
 
     header {
-      display: flex;
-      width: 100%;
-      align-items: center;
+ 
 
     }
 
@@ -28,6 +26,7 @@
       text-align: center;
       gap: 6rem;
       height: 80%;
+      
 
       .titulo {
         width: 100%;
