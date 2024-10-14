@@ -15,6 +15,11 @@
                         <input type="checkbox" id="valor">
                         <label for="valor">1</label>
                     </div>
+                    <div class="contain-infos">
+                        <h4></h4>
+                        <h3></h3>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </main>
