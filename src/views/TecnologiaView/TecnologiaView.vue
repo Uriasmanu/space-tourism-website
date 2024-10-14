@@ -37,10 +37,10 @@
 
             </div>
             <div class="image">
-                <img src="" alt="">
+                <img :src="launchMobile" alt="">
             </div>
             <div class="imageMobile">
-                <img src="" alt="">
+                <img :src="launch" alt="">
             </div>
         </main>
     </div>
