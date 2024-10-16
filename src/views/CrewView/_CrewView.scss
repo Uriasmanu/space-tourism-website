@@ -91,6 +91,10 @@
         display: flex;
         gap: 2rem;
 
+        label{
+          display: none;
+        }
+
         input {
           cursor: pointer;
           appearance: none; /* Remove o estilo padrão do radio button */

@@ -1,92 +1,132 @@
 @import "../../../main.scss";
 
 @media (max-width: 600px) {
-  
   .crew-container {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
     width: 100%;
     height: 100vh;
+    color: aliceblue;
     padding: 1.5rem;
-    background-image: url("../../assets/crew/background-crew-mobile.jpg");
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    main {
+    header {
+      position: relative;
+      top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      .menu {
+        display: block;
+      }
+    }
+
+    .tripula {
+      margin-top: 5%;
+      justify-content: space-between;
+      padding: 0rem 0rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
 
-      .tripula {
-        margin-top: 5%;
+      img {
+        width: 170px;
+        max-height: 170px;
+        min-height: 170px;
+        margin-top: 10%;
+      }
+    }
 
-        img {
-          width: auto;
-          height: 225px;
-          margin-top: 12%;
+    main {
+      display: flex;
+      height: 100%;
+      margin-top: 6%;
+      justify-content: space-evenly;
+
+      .titulo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        gap: 30px;
+
+        h2 {
+          font-size: 1rem;
+          color: #898888;
+          font-weight: bold;
+          font-family: "Bellefair", serif;
+          text-align: center;
+
+          strong {
+            color: #fff;
+            font-weight: 100;
+            font-family: "Bellefair", serif;
+          }
         }
 
-        .titulo {
-          height: 50%;
+        .chamada {
+          display: flex;
+          flex-direction: column;
           width: 100%;
-          gap: 25px;
-          justify-content: center;
+          
 
-          .chamada {
+          .descricao {
             display: flex;
             flex-direction: column;
-            width: 100%;
             height: auto;
+            gap: 10px;
+            width: 100%;
+            align-items: center;
 
-            .descricao {
-              display: flex;
-              flex-direction: column;
-              gap: 8px;
-              align-items: center;
+            h3 {
+              font-size: 1.1rem;
+              font-family: "Bellefair", serif;
+              color: #6d6f7e;
+            }
 
-              h3 {
-                font-size: 1.2rem;
-                font-family: "Bellefair", serif;
-                color: #6d6f7e;
-              }
+            h2 {
+              font-size: 1.9rem;
+              font-family: "Bellefair", serif;
+              color: #fff;
+              font-weight: 100;
+            }
 
-              h2 {
-                font-size: 2rem;
-                font-family: "Bellefair", serif;
-                color: #fff;
-              }
-
-              P {
-                font-size: 1rem;
-                font-family: "Bellefair", serif;
-                color: #d0d6f9;
-                line-height: 1.5;
-                text-align: center;
-              }
+            P {
+              font-size: 1rem;
+              font-family: "Bellefair", serif;
+              color: #d0d6f9;
+              line-height: 1.5;
+              text-align: center;
+              width: 90%;
             }
           }
+        }
 
-          .guia {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
+        .guia {
+          display: flex;
+          gap: 2rem;
+          width: 100%;
+          justify-content: center;
 
-            label {
-              display: none;
-            }
+          input {
+            cursor: pointer;
+            appearance: none;
+            /* Remove o estilo padrão do radio button */
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            /* Deixa o input com formato circular */
+            background-color: grey;
+            /* Cor padrão dos inputs não selecionados */
+            border: 2px solid transparent;
 
-            input {
-              cursor: pointer;
-              appearance: none; /* Remove o estilo padrão do radio button */
-              width: 10px;
-              height: 10px;
-              border-radius: 50%; /* Deixa o input com formato circular */
-              background-color: grey; /* Cor padrão dos inputs não selecionados */
-              border: 2px solid transparent;
-
-              &:checked {
-                background-color: #fff; /* Cor do input selecionado */
-                border-color: #fff;
-              }
+            &:checked {
+              background-color: #fff;
+              /* Cor do input selecionado */
+              border-color: #fff;
             }
           }
         }
