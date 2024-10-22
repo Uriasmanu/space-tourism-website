@@ -13,17 +13,10 @@
                 <div class="informacoes">
                     <div class="textos">
                         <div class="checkbox">
-                            <div class="botao-informacoes">
-                                <input type="checkbox" id="id" >
-                                <label for="id">{{ currentSection.id }}</label>
-                            </div>
-                            <div class="botao-informacoes">
-                                <input type="checkbox" id="id" >
-                                <label for="id">{{ currentSection.id }}</label>
-                            </div>
-                            <div class="botao-informacoes">
-                                <input type="checkbox" id="id" >
-                                <label for="id">{{ currentSection.id }}</label>
+                            <div class="botao-informacoes" v-for="(section, index) in sections" :key="section.id">
+                                <input type="checkbox" :id="'checkbox-' + section.id" :checked="currentIndex === index"
+                                    @change="currentIndex = index">
+                                <label :for="'checkbox-' + section.id">{{ index + 1 }}</label>
                             </div>
                         </div>
                         <div class="contain-infos">
@@ -32,15 +25,14 @@
                             <p class="descricao">{{ currentSection.descricao }}</p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
             <div class="image">
-                <img :src="launchMobile" alt="">
+                <img :src="currentImage" alt="">
             </div>
             <div class="imageMobile">
-                <img :src="launch" alt="">
+                <img :src="currentImageMobile" alt="">
             </div>
         </main>
     </div>
@@ -51,12 +43,12 @@ import VeiculoLançamento from '@/assets/components/VeiculoLançamento/VeiculoLa
 import HeaderMenu from '@/assets/shared/Header/HeaderMenu.vue';
 import MenuMobile from '@/assets/shared/MenuMobile/MenuMobile.vue';
 
-import launch from '../../starter-code/assets/technology/image-launch-vehicle-landscape.jpg';
-import launchMobile from '../../starter-code/assets/technology/image-launch-vehicle-portrait.jpg';
+import launch from '../../starter-code/assets/technology/image-launch-vehicle-portrait.jpg';
+import launchMobile from '../../starter-code/assets/technology/image-launch-vehicle-landscape.jpg';
 import space from '../../starter-code/assets/technology/image-space-capsule-landscape.jpg';
 import spaceMobile from '../../starter-code/assets/technology/image-space-capsule-portrait.jpg';
-import spaceport from '../../starter-code/assets/technology/image-spaceport-landscape.jpg';
-import spaceportMobile from '../../starter-code/assets/technology/image-spaceport-portrait.jpg';
+import spaceport from '../../starter-code/assets/technology/image-spaceport-portrait.jpg';
+import spaceportMobile from '../../starter-code/assets/technology/image-spaceport-landscape.jpg';
 
 import tecnologiaData from './TecnologiaView.json';
 
@@ -66,28 +58,24 @@ export default {
         HeaderMenu,
         MenuMobile,
         VeiculoLançamento,
-
     },
 
     data() {
         return {
             sections: tecnologiaData.sections,
             currentIndex: 0,
-            isChecked: false,
-
             launch,
             launchMobile,
             space,
             spaceMobile,
             spaceport,
             spaceportMobile,
-
-        }
+        };
     },
 
     computed: {
         currentSection() {
-            return this.sections[this.currentIndex]; // Seção atual com base no index
+            return this.sections[this.currentIndex];
         },
         currentImage() {
             if (this.currentSection.titulo === 'Launch vehicle') {
@@ -110,10 +98,9 @@ export default {
             return '';
         }
     }
-}
-
+};
 </script>
 
 <style lang="scss" scoped>
-@import './_TecnologiaView.scss'
+@import './_TecnologiaView.scss';
 </style>

@@ -31,7 +31,8 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: auto;
+            height: 100%;
+            gap: 30px;
 
             h2 {
                 font-size: 1.3rem;
@@ -49,18 +50,21 @@
             .informacoes {
                 display: flex;
                 height: 80%;
+                align-items: flex-end;
 
                 .textos {
                     display: flex;
                     gap: 3rem;
-                    height: 60%;
+                   
+                    align-items: center;
 
-                    .checkbox{
+                    .checkbox {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         height: auto;
                         justify-content: space-between;
+                        gap: 50px;
                     }
 
                     .botao-informacoes {
@@ -109,13 +113,23 @@
                     }
                 }
 
-
             }
 
-            
         }
-      .imageMobile{
-        display: none;
-      }
+
+        .image{
+            width: 515px;
+            height: 458px;
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .imageMobile {
+            display: none;
+        }
     }
 }
