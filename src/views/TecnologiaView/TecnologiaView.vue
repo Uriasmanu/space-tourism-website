@@ -13,10 +13,15 @@
                 <div class="informacoes">
                     <div class="textos">
                         <div class="checkbox">
-                            <div class="botao-informacoes" v-for="(section, index) in sections" :key="section.id">
+                            <div v-for="(section, index) in sections" :key="section.id">
+                                <label 
+                                 class="botao-informacoes" 
+                                 :for="'checkbox-' + section.id"
+                                 :class="{'selecionado': currentIndex === index}"
+                                 >{{ index + 1 }}</label>
                                 <input type="checkbox" :id="'checkbox-' + section.id" :checked="currentIndex === index"
                                     @change="currentIndex = index">
-                                <label :for="'checkbox-' + section.id">{{ index + 1 }}</label>
+
                             </div>
                         </div>
                         <div class="contain-infos">
