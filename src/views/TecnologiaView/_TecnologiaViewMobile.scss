@@ -1,0 +1,161 @@
+@import "../../../main.scss";
+
+@media (max-width: 600px) {
+  .containe-tecnologia {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      position: relative;
+      top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+
+      .menu {
+        display: block;
+      }
+    }
+
+    main {
+      box-sizing: border-box;
+      display: flex;
+      height: 100%;
+      margin-top: 0%;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+
+      .titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        gap: 60px;
+
+        h2 {
+          font-size: 1rem;
+          color: #898888;
+          font-weight: bold;
+          font-family: "Bellefair", serif;
+          text-align: center;
+
+          strong {
+            color: #fff;
+            font-weight: 100;
+            font-family: "Bellefair", serif;
+          }
+        }
+
+        .informacoes {
+          display: flex;
+          height: 80%;
+          align-items: flex-end;
+          flex-direction: column;
+
+          .textos {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+            .checkbox {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              height: auto;
+              justify-content: space-between;
+              gap: 20px;
+            }
+
+            .botao-informacoes {
+              border: 1px solid #fff;
+              height: 40px;
+              width: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50px;
+              cursor: pointer;
+              background: transparent;
+
+              label {
+                cursor: pointer;
+                font-size: 1.5rem;
+                color: #fff;
+                font-family: "Bellefair", serif;
+                font-weight: 100;
+              }
+
+              input {
+                display: none; // Esconde o checkbox
+              }
+            }
+
+            .botao-informacoes.selecionado {
+              height: 40px;
+              width: 40px;
+              background: #fff;
+              color: #000;
+            }
+
+            .contain-infos {
+              font-family: "Bellefair", serif;
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              line-height: 2;
+
+              h4 {
+                color: #898888;
+                font-size: .9rem;
+                text-align: center;
+              }
+
+              h3 {
+                color: #fff;
+                font-size: 1.5rem;
+                text-align: center;
+              }
+
+              p {
+                color: #d0d6f9;
+                font-size: 0.9rem;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .image {
+        display: none;
+      }
+
+      .imageMobile {
+        width: 100%;
+        height: 131px;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    opacity: 0; // Torna o checkbox invisível
+    position: absolute; // Remove-o do fluxo normal do documento
+  }
+}

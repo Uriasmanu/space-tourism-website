@@ -7,18 +7,22 @@
             </div>
         </header>
         <main>
+            
             <div class="titulo">
                 <h2>03 <strong>SPACE LAUNCH 101</strong></h2>
-
                 <div class="informacoes">
+
+                    <div class="image">
+                <img :src="currentImage" alt="">
+            </div>
+            <div class="imageMobile">
+                <img :src="currentImageMobile" alt="">
+            </div>
                     <div class="textos">
                         <div class="checkbox">
                             <div v-for="(section, index) in sections" :key="section.id">
-                                <label 
-                                 class="botao-informacoes" 
-                                 :for="'checkbox-' + section.id"
-                                 :class="{'selecionado': currentIndex === index}"
-                                 >{{ index + 1 }}</label>
+                                <label class="botao-informacoes" :for="'checkbox-' + section.id"
+                                    :class="{ 'selecionado': currentIndex === index }">{{ index + 1 }}</label>
                                 <input type="checkbox" :id="'checkbox-' + section.id" :checked="currentIndex === index"
                                     @change="currentIndex = index">
 
@@ -33,12 +37,7 @@
                 </div>
 
             </div>
-            <div class="image">
-                <img :src="currentImage" alt="">
-            </div>
-            <div class="imageMobile">
-                <img :src="currentImageMobile" alt="">
-            </div>
+
         </main>
     </div>
 </template>
@@ -50,8 +49,8 @@ import MenuMobile from '@/assets/shared/MenuMobile/MenuMobile.vue';
 
 import launch from '../../starter-code/assets/technology/image-launch-vehicle-portrait.jpg';
 import launchMobile from '../../starter-code/assets/technology/image-launch-vehicle-landscape.jpg';
-import space from '../../starter-code/assets/technology/image-space-capsule-landscape.jpg';
-import spaceMobile from '../../starter-code/assets/technology/image-space-capsule-portrait.jpg';
+import space from '../../starter-code/assets/technology/image-space-capsule-portrait.jpg';
+import spaceMobile from '../../starter-code/assets/technology/image-space-capsule-landscape.jpg';
 import spaceport from '../../starter-code/assets/technology/image-spaceport-portrait.jpg';
 import spaceportMobile from '../../starter-code/assets/technology/image-spaceport-landscape.jpg';
 
@@ -108,4 +107,5 @@ export default {
 
 <style lang="scss" scoped>
 @import './_TecnologiaView.scss';
+@import './_TecnologiaViewMobile.scss';
 </style>
