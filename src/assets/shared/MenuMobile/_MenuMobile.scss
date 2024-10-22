@@ -1,22 +1,10 @@
 @import "../../../../main.scss";
 
 .menu-mobile {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15rem;
-  background: rgba(11, 13, 23, 0.15);
-  backdrop-filter: blur(25px);
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-content: flex-end;
-  flex-wrap: wrap;
-  padding: 1.5rem;
-  gap: 4rem;
+  z-index: 3;
 
-  label{
+
+  label {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -29,35 +17,63 @@
   input {
     display: none;
   }
+  
 
-  .navegacao{
+  .navegacao {
     width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 9px;
+    right: 0;
+    width: 15rem;
+    background: rgba(11, 13, 23, 0.15);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    gap: 4rem;
+    z-index: 0;
 
-    ul{
+    // Adicione a transição para suavizar o efeito
+    transition: transform 0.5s ease;
+
+    // Inicialmente oculta o menu fora da tela
+    transform: translateX(100%); // Menu começa fora da tela
+
+    &.open {
+      transform: translateX(0); // Move o menu para dentro da tela quando aberto
+    }
+
+
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      li {
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        align-items: center;
+        border-right: solid 3px transparent;
+        gap: 10px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
 
-        li {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            border-right: solid 3px transparent;
-            gap: 10px;
-            font-weight: bold;
-            color: #fff;
-            cursor: pointer;
-    
-            strong {
-              font-weight: 100;
-              color: #ffffffad;
-            }
-    
-            &.active {
-              border-right: solid 3px white;
-              cursor: pointer;
-            }
+        strong {
+          font-weight: 100;
+          color: #ffffffad;
         }
+
+        &.active {
+          border-right: solid 3px white;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
