@@ -3,6 +3,9 @@
 @media (max-width: 600px) {
   .destination-container {
     background-image: url("../../assets/destination//background-destination-mobile.jpg");
+    background-repeat: no-repeat; // Não repetir a imagem de fundo
+    background-size: cover; // Ajusta a imagem para cobrir todo o elemento
+    background-position: center; // Centraliza a imagem
     width: 100%;
     height: 100vh;
     color: aliceblue;
@@ -11,7 +14,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-
     header {
       position: relative;
       top: 0px;
@@ -19,7 +21,7 @@
       align-items: center;
       justify-content: space-between;
       height: auto;
-    
+
       .menu {
         display: block;
       }
