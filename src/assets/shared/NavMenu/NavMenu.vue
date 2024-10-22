@@ -1,12 +1,12 @@
 <template>
     <nav>
         <ul>
-            <li :class="{ active: route.name === 'Home' }" @click="navigateTo('Home')">00 <strong>Início</strong></li>
+            <li :class="{ active: route.name === 'Home' }" @click="navigateTo('Home')">00 <strong>INICIO</strong></li>
             <li :class="{ active: route.name === 'Destination' }" @click="navigateTo('Destination')">01
-                <strong>Destino</strong>
+                <strong>DESTINOS</strong>
             </li>
-            <li :class="{ active: route.name === 'Crew' }" @click="navigateTo('Crew')">02 <strong>Tripulação</strong></li>
-            <li :class="{ active: route.name === 'Tecnologia' }" @click="navigateTo('Tecnologia')">03 <strong>Tecnologia</strong></li>
+            <li :class="{ active: route.name === 'Crew' }" @click="navigateTo('Crew')">02 <strong>TRIPULACAO</strong></li>
+            <li :class="{ active: route.name === 'Tecnologia' }" @click="navigateTo('Tecnologia')">03 <strong>TECNOLOGIA</strong></li>
         </ul>
     </nav>
 </template>

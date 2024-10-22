@@ -1,5 +1,63 @@
-.menu-mobile{
-    input{
-        display: none;
+@import "../../../../main.scss";
+
+.menu-mobile {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15rem;
+  background: rgba(11, 13, 23, 0.15);
+  backdrop-filter: blur(25px);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 4rem;
+
+  label{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu {
+    align-self: flex-end;
+  }
+
+  input {
+    display: none;
+  }
+
+  .navegacao{
+    width: 100%;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-right: solid 3px transparent;
+            gap: 10px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+    
+            strong {
+              font-weight: 100;
+              color: #ffffffad;
+            }
+    
+            &.active {
+              border-right: solid 3px white;
+              cursor: pointer;
+            }
+        }
     }
+  }
 }
